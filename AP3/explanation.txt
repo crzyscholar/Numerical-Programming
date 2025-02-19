@@ -1,0 +1,32 @@
+1.Methods Chosen:
+The two methods used in the code are Nearest Neighbor and Bicubic Interpolation.
+Nearest Neighbor works by simply copying the value of the nearest pixel. This method is fast but 
+produces blocky or pixelated images, especially when resizing significantly.
+Bicubic Interpolation takes into account the values of 16 neighboring pixels (4x4 grid) to compute a 
+new pixel value. It creates smoother images and preserves more details, especially for larger resizing.
+
+2.Chosen Image for Good Results:
+I selected an image named "text.jpg" for the experiment. Bicubic interpolation works well for this image 
+because it preserves the fine details and doesn't introduce too much pixelation when zooming or resizing.
+
+3.Chosen Image for Poor Results:
+A poor result might occur when using these methods on images with very sharp edges or a lot of noise. 
+In these cases, methods like Nearest Neighbor can create noticeable artifacts or blockiness, and Bicubic may soften the edges too much.
+
+4.Matrix Norms for Error Estimation:
+I used the Frobenius norm to estimate the error between the original image and the resized images. 
+The Frobenius norm calculates the difference between the pixel values of two images, which gives a 
+sense of how much the resized image deviates from the original one. A higher error value means a worse result.
+The code calculates errors for both Nearest Neighbor and Bicubic interpolations, and prints out the results to compare them.
+
+5.Numerical Experiments and Conclusions:
+When the image is zoomed multiple times using Nearest Neighbor, the result becomes more pixelated and blocky, 
+especially in areas with sharp edges or smooth gradients.
+Bicubic interpolation performs better in these cases, as it smoothens out the transition between 
+pixels and preserves more details, resulting in a clearer image when zoomed.
+However, Bicubic may not always work well for all types of images. It can blur sharp edges, 
+especially in images with high contrast or fine details, making it unsuitable for certain cases where clarity is crucial.
+
+In summary, Bicubic interpolation generally produces better results for images with smooth gradients and fine details, while Nearest 
+Neighbor is faster but can result in blocky images, especially when resizing significantly. The Frobenius norm helps quantify these differences 
+by measuring the pixel-wise error between the resized image and the original.

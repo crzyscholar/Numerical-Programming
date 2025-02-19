@@ -1,0 +1,5 @@
+k means is generally faster since calculating means in relatively faster
+
+k medoids is outlier resistent algorithm, meaning if there's a lot of noise it's better to use k medoids rather than k means
+
+k means can only be used for numerical data, while k medoids can be used for both numerical and categorical data. 
