@@ -14,14 +14,14 @@ I selected a **predator-prey-scavenger model** with an additional environmental 
 
 The system of ODEs is:
 
-\[
+$$
 \begin{aligned}
-\frac{dx}{dt} &= a x \left(1 - \frac{x}{K}\right) - b x y \\
-\frac{dy}{dt} &= c x y - d y - e y z \\
-\frac{dz}{dt} &= f y z - g z \\
-\frac{dp}{dt} &= h x + i y + j z - k p
+    \frac{dx}{dt} &= a x \left(1 - \frac{x}{K}\right) - b x y \\
+    \frac{dy}{dt} &= c x y - d y - e y z \\
+    \frac{dz}{dt} &= f y z - g z \\
+    \frac{dp}{dt} &= h x + i y + j z - k p
 \end{aligned}
-\]
+$$
 
 ### **Parameters**
 - \(a, K, b, c, d, e, f, g, h, i, j, k\): Interaction coefficients, growth rates, and decay constants.
