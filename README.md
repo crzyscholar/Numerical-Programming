@@ -39,4 +39,4 @@ This consists of two exercises.
 Both of the exercises are equipped with explanations and examples, as well as test images.([first task](https://github.com/crzyscholar/Numerical-Programming/blob/main/finalProject/first_task/first%20task.md) and [second task](https://github.com/crzyscholar/Numerical-Programming/blob/main/finalProject/second_task/Second%20Task.md)).
 
 
-Everything else is just a small exrcise I did along the way.
+Everything else is just a small exercise I did along the way.
